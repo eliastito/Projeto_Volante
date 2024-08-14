@@ -1,0 +1,345 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor general */
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Estilos del encabezado */
+.header {
+  background: #333;
+  color: #fff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #737571 3px solid;
+}
+
+/* Ajusta el tamaño del logo en el header */
+.header .logo img {
+  width: 150px; /* Ajusta el ancho según lo necesario */
+  height: auto; /* Mantiene la proporción del logo */
+}
+
+.logo img {
+  height: 30px;
+  width: auto;
+  float: left;
+}
+
+.menu-icono {
+  display: none;
+}
+
+.navbar ul {
+  padding: 0;
+  list-style: none;
+}
+
+.navbar ul li {
+  display: inline;
+  padding: 0 20px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Texto del encabezado */
+.header-txt h1 {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.header-txt p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Estilos de los botones */
+.btn-1,
+.btn-2,
+.btn-3 {
+  display: inline-block;
+  color: #fff;
+  background: #ff0000;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-1:hover,
+.btn-2:hover,
+.btn-3:hover {
+  background: #ff0000;
+}
+
+/* Estilos de los productos */
+.product-1 {
+  border: 1px solid #615f5f;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-1 img {
+  max-width: 100%;
+}
+
+.product-txt h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product-txt h4 {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Estilos del pie de página */
+.footer {
+  background-color: #3c3d3e;
+  color: white;
+  padding: 20px 0;
+  text-align: left;
+}
+
+.footer .footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.footer .footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer .footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer .footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer .footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer .footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Ajusta el tamaño del logo en el footer */
+.footer .logo-section img {
+  width: 100px; /* Ajusta el ancho según lo necesario */
+  height: auto; /* Mantiene la proporción del logo */
+}
+
+.footer .footer-social {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.footer .footer-social a {
+  margin: 0 10px;
+}
+
+.footer .footer-social img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer .link {
+  text-align: center;
+}
+
+.footer .link img {
+  height: 60px;
+  width: auto;
+}
+
+.footer .link ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer .link ul li {
+  display: inline;
+  padding: 0 10px;
+}
+
+.footer .link ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilos de la sección de contacto */
+.contact-content {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.contact-content h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos de listas */
+ul {
+  list-style-type: none; /* Elimina los puntos de la lista */
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0; /* Espaciado entre los elementos de la lista */
+}
+
+ul li a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: #555658; /* Color del enlace */
+  transition: color 0.3s; /* Añade una transición para efectos */
+}
+
+ul li a:hover {
+  color: #555658; /* Color del enlace al pasar el cursor */
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-left: 50px; /* Agrega un margen a la izquierda */
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.menu.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar ul li {
+  margin-left: 15px; /* Añade espacio entre los enlaces */
+}
+
+.menu {
+  display: none;
+  /* Otros estilos de menú */
+}
+
+.menu-checkbox:checked + label + .menu {
+  display: block;
+  /* Estilos adicionales para el menú cuando está visible */
+}
+
+.menu-icono {
+  cursor: pointer;
+  width: 30px; /* Ajusta el tamaño del icono según sea necesario */
+}
+
+.contenedor {
+  text-align: center; /* Centra el contenido dentro del contenedor */
+}
+
+.boton {
+  display: inline-block; /* Asegura que el botón mantenga su tamaño según el contenido */
+  background-color: #ff0000; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno */
+  text-decoration: none; /* Elimina el subrayado del texto */
+  border-radius: 5px; /* Bordes redondeados */
+  margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+.header {
+  margin-bottom: 20px; /* Espacio debajo del encabezado */
+}
+
+.subheader {
+  margin-top: 10px; /* Espacio encima del subtítulo */
+  margin-bottom: 20px; /* Espacio debajo del subtítulo */
+}
+
+p.subheader {
+  font-size: 1.2em; /* Ajusta el tamaño de la fuente según lo desees */
+  color: #cccccc; /* Color del subtítulo */
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    background-color: #333;
+    /* Otros estilos de diseño para móviles */
+  }
+
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .menu ul li {
+    padding: 10px;
+  }
+
+  .menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Ajustes para centrar el contenido del footer en móviles */
+  .footer .footer-content {
+    flex-direction: column; /* Cambia la dirección de los elementos a columna */
+    text-align: center; /* Centra el texto */
+  }
+
+  .footer .footer-section {
+    margin: 10px 0; /* Asegura un margen vertical entre secciones */
+  }
+
+  .footer .footer-social {
+    justify-content: center; /* Centra los iconos sociales */
+  }
+}
